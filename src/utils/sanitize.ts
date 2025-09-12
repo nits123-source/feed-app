@@ -22,7 +22,6 @@ export const sanitizeInput = (input: string): string => {
   if (typeof input !== 'string') return ''
   
   return input
-    .trim() // Remove leading/trailing whitespace
     .replace(/[<>]/g, '') // Remove potential HTML tags
     .replace(/javascript:/gi, '') // Remove javascript: protocol
     .replace(/on\w+=/gi, '') // Remove event handlers like onclick=
