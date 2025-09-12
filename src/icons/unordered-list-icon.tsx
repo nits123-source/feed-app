@@ -10,7 +10,7 @@ export function UnorderedListIcon({ size = 16, color = "currentColor", className
       width={size}
       height={size}
       viewBox="0 0 16 16"
-      fill="currentColor"
+      fill={color}
       className={className}
     >
       <circle cx="2" cy="4" r="1"/>

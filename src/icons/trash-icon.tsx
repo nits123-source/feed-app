@@ -10,7 +10,7 @@ export function TrashIcon({ size = 16, color = "currentColor", className = "" }:
       width={size}
       height={size}
       viewBox="0 0 16 16"
-      fill="currentColor"
+      fill={color}
       className={className}
     >
       <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
