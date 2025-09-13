@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import PostInput from './PostInput'
 import PostCard from './PostCard'
 import type { Post, User } from '../types'
-import { getPosts, savePost, updatePost } from '../utils/localStorage'
+import { getPosts, savePost} from '../utils/localStorage'
 import { sanitizeName } from '../utils/sanitize'
 
 interface FeedProps {
@@ -46,15 +46,7 @@ const Feed = ({ currentUser, onUnauthorizedAction }: FeedProps) => {
       return
     }
 
-    const updatedPosts = posts.map(post => {
-      if (post.id === postId) {
-        const updatedPost = { ...post, likes: post.likes + 1 }
-        updatePost(postId, { likes: updatedPost.likes })
-        return updatedPost
-      }
-      return post
-    })
-    setPosts(updatedPosts)
+    alert(`Like functionality is not implemented yet ${postId}`)
   }
 
   const handlePostInputClick = () => {
